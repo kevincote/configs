@@ -9,6 +9,9 @@ backup_path = os.path.join(home_path, "_config")
 config_files = [
   # .zshrc
   [os.path.join(home_path, ".zshrc"), os.path.join(backup_path, "zsh", ".zshrc")],
+  
+  # .nv
+  [os.path.join(home_path, ".nv"), os.path.join(backup_path, "nv", ".nv")]
 ]
 
 config_directories = [

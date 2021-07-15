@@ -17,3 +17,6 @@ alias vi="nvim"
 # Quick file edit
 alias ed_a="nvim $ZSHCONFIG/aliases.zsh"
 alias ed_cli="nvim $ZSHCONFIG/command-line-tools.zsh"
+
+# Backup config files
+alias bkp="python ~/_config/backup_config.py"
