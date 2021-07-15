@@ -11,14 +11,27 @@ config_files = [
   [os.path.join(home_path, ".zshrc"), os.path.join(backup_path, "zsh", ".zshrc")],
   
   # .nv
-  [os.path.join(home_path, ".nv"), os.path.join(backup_path, "nv", ".nv")]
+  [os.path.join(home_path, ".nv"), os.path.join(backup_path, "nv", ".nv")],
+
+  # .svgo
+  [os.path.join(home_path, ".svgo.config.js"), os.path.join(backup_path, "svgo", ".svgo.config.js")],
+
+  # .tool-versions
+  [os.path.join(home_path, ".tool-versions"), os.path.join(backup_path, "asdf", ".tool-versions")],
+
+  # git
+  [os.path.join(home_path, ".gitconfig"), os.path.join(backup_path, "git", ".gitconfig")]
 ]
 
 config_directories = [
   # zsh
   [os.path.join(home_path, ".zsh"), os.path.join(backup_path, "zsh", "config")],
+
   # nvim
-  [os.path.join(config_path, "nvim"), os.path.join(backup_path, "nvim")]
+  [os.path.join(config_path, "nvim"), os.path.join(backup_path, "nvim")],
+
+  # git
+  [os.path.join(config_path, "git"), os.path.join(backup_path, "git")]
 ]
 
 for config_file in config_files:
