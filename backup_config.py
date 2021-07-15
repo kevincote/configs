@@ -12,7 +12,9 @@ config_files = [
 ]
 
 config_directories = [
-  # ZSH configs
+  # zsh
+  [os.path.join(home_path, ".zsh"), os.path.join(backup_path, "zsh", "config")],
+  # nvim
   [os.path.join(config_path, "nvim"), os.path.join(backup_path, "nvim")]
 ]
 
